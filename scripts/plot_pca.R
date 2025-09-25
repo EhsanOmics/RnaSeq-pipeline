@@ -1,0 +1,6 @@
+load("main/results/dds.RData")
+vsd <- vst(dds)
+pcaData <- plotPCA(vsd, intgroup="condition", returnData=TRUE)
+png("main/plots/pca_plot.png")
+plot(pcaData$PC1, pcaData$PC2, col=as.factor(pcaData$condition), pch=19, main="PCA Plot")
+dev.off()
