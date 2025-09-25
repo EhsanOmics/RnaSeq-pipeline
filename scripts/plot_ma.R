@@ -1,0 +1,5 @@
+load("main/results/dds.RData")
+res <- results(dds)
+png("main/plots/ma_plot.png")
+plotMA(res, main="MA Plot")
+dev.off()
