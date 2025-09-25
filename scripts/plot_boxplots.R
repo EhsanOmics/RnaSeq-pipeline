@@ -1,0 +1,5 @@
+load("main/results/dds.RData")
+vsd <- vst(dds)
+png("main/plots/boxplots.png")
+boxplot(assay(vsd)[1:10,], main="Boxplots of Top Genes")
+dev.off()
