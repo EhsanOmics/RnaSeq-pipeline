@@ -1,6 +1,8 @@
 🧬 RNA-Seq Pipeline
 
-A reproducible and scalable RNA-seq analysis pipeline built with Snakemake and R, designed for differential expression analysis and statistical visualization. This demonstration pipeline simulates a complete RNA-seq workflow from FASTQ to publication-ready plots, ideal for showcasing reproducibility and workflow design.
+A reproducible and scalable RNA-seq analysis pipeline built with Snakemake and R, designed for differential expression analysis and statistical visualization. This mock pipeline simulates a full RNA-seq workflow from FASTQ to publication-ready plots, ideal for showcasing reproducibility, workflow design, and scientific branding.
+
+---
 
 🚀 Features
 
@@ -8,70 +10,75 @@ A reproducible and scalable RNA-seq analysis pipeline built with Snakemake and R
 - Alignment (STAR, placeholder)  
 - Quantification (featureCounts, placeholder)  
 - Differential expression analysis (DESeq2)  
-- Statistical plots:
-  - Volcano plot  
-  - Heatmap  
-  - PCA  
-  - MA plot  
-  - Dispersion plot  
-  - Boxplots  
+- Statistical plots: volcano plot, heatmap, PCA, MA plot, dispersion plot, boxplots
+
+---
 
 📁 Folder Structure
 
 rnaseq-pipeline/  
-├── main/  
-│   ├── raw/                  → FASTQ files  
-│   ├── qc/                   → FastQC reports  
-│   ├── reference/            → STAR index + GTF  
-│   ├── aligned/              → BAM files  
-│   ├── counts/               → Count tables  
-│   ├── results/              → DESeq2 results + dds.RData  
-│   └── plots/                → All visualizations  
-├── config.yaml               → Sample + group config  
-├── Snakefile                 → Snakemake workflow  
-├── scripts/                  → All R scripts  
-│   ├── run_deseq2.R  
-│   ├── plot_volcano.R  
-│   ├── plot_heatmap.R  
-│   ├── plot_pca.R  
-│   ├── plot_ma.R  
-│   ├── plot_dispersion.R  
-│   └── plot_boxplots.R  
-└── README.md  
+├── README.md – Project description and instructions  
+├── Snakefile – Snakemake workflow  
+├── config.yaml – Sample and group configuration  
+├── scripts/ – R scripts for DESeq2 and plotting  
+│ ├── run_deseq2.R  
+│ ├── plot_volcano.R  
+│ ├── plot_heatmap.R  
+│ ├── plot_pca.R  
+│ ├── plot_ma.R  
+│ ├── plot_dispersion.R  
+│ └── plot_boxplots.R  
+└── data/ – Input and output files  
+  ├── raw/ – FASTQ files  
+  ├── qc/ – FastQC reports  
+  ├── reference/ – Genome and GTF files  
+  ├── aligned/ – BAM files  
+  ├── counts/ – Count matrix  
+  ├── results/ – DESeq2 output (dds.RData)  
+  └── plots/ – PNG visualizations
+
+---
 
 🧪 How to Run
 
-snakemake --cores 4
+Use the command snakemake --cores 4 to execute the full pipeline. It will generate all results and plots. The pipeline runs with dummy data but is fully compatible with real input.
 
-This command executes the full pipeline, generating all results and plots. The pipeline is designed to run without real FASTQ data, but is fully compatible with real input.
+---
 
 📊 Visual Outputs
 
-All plots are generated using R and saved in main/plots/:  
+All plots are generated using R and saved in data/plots/:  
 - volcano_plot.png  
 - heatmap.png  
 - pca_plot.png  
 - ma_plot.png  
 - dispersion_plot.png  
-- boxplots.png  
+- boxplots.png
+
+---
 
 📌 Sample Configuration
 
 Defined in config.yaml:  
 - 20 samples total  
 - 10 control, 10 treatment  
-- Reference genome and GTF paths included  
+- Reference genome and GTF paths included
+
+---
 
 🧠 About
 
-This pipeline is part of the EhsanOmics initiative, focused on building reproducible bioinformatics workflows and clear scientific communication. It demonstrates practical skills in RNA-seq analysis, Snakemake workflow design, and R-based visualization. The project is intended for demonstration, collaboration, and future integration with real datasets.
+This pipeline is part of the EhsanOmics initiative, focused on reproducible bioinformatics workflows and clear scientific communication. It demonstrates practical skills in RNA-seq analysis, Snakemake workflow design, and R-based visualization. Intended for demonstration, collaboration, and future integration with real datasets.
+
+---
 
 📫 Contact
 
-For collaboration or feedback:  
 - Email: ejafarinia@gmail.com  
-- LinkedIn: https://www.linkedin.com/in/ehsanjafarinia  
-- GitHub: https://github.com/ehsanomics  
+- LinkedIn: https://www.linkedin.com/in/ehsanjafarinia 
+- GitHub: https://github.com/ehsanomics
+
+---
 
 ⚠️ Disclaimer
 
