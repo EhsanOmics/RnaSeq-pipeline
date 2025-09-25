@@ -1,0 +1,6 @@
+chr1	ENSEMBL	gene	1	1000	.	+	.	gene_id "GeneA"; gene_name "GeneA";
+chr1	ENSEMBL	gene	2000	3000	.	+	.	gene_id "GeneB"; gene_name "GeneB";
+chr1	ENSEMBL	gene	4000	5000	.	+	.	gene_id "GeneC"; gene_name "GeneC";
+chr1	ENSEMBL	gene	6000	7000	.	+	.	gene_id "GeneD"; gene_name "GeneD";
+chr1	ENSEMBL	gene	8000	9000	.	+	.	gene_id "GeneE"; gene_name "GeneE";
+chr1	ENSEMBL	gene	10000	11000	.	+	.	gene_id "GeneF"; gene_name "GeneF";
