@@ -1,0 +1,7 @@
+gene	Sample1	Sample2	...	Sample20
+GeneA	100	120	...	180
+GeneB	200	190	...	160
+GeneC	150	170	...	140
+GeneD	80	90	...	110
+GeneE	300	310	...	290
+GeneF	50	60	...	70
