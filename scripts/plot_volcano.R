@@ -1,0 +1,5 @@
+load("main/results/dds.RData")
+res <- results(dds)
+png("main/plots/volcano_plot.png")
+plot(res$log2FoldChange, -log10(res$pvalue), pch=20, main="Volcano Plot")
+dev.off()
