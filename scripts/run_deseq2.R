@@ -1,0 +1,6 @@
+library(DESeq2)
+counts <- read.table("main/counts/counts.txt", header=TRUE, row.names=1)
+colData <- data.frame(row.names=colnames(counts), condition=rep(c("control", "treatment"), each=10))
+dds <- DESeqDataSetFromMatrix(countData=counts, colData=colData, design=~condition)
+dds <- DESeq(dds)
+save(dds, file="main/results/dds.RData")
