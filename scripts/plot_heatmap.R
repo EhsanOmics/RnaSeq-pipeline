@@ -1,0 +1,6 @@
+library(pheatmap)
+load("main/results/dds.RData")
+vsd <- vst(dds)
+png("main/plots/heatmap.png")
+pheatmap(assay(vsd)[1:50,], cluster_rows=TRUE, cluster_cols=TRUE)
+dev.off()
