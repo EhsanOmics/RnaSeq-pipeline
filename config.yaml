@@ -1,0 +1,47 @@
+samples:
+  - Sample1
+  - Sample2
+  - Sample3
+  - Sample4
+  - Sample5
+  - Sample6
+  - Sample7
+  - Sample8
+  - Sample9
+  - Sample10
+  - Sample11
+  - Sample12
+  - Sample13
+  - Sample14
+  - Sample15
+  - Sample16
+  - Sample17
+  - Sample18
+  - Sample19
+  - Sample20
+
+groups:
+  Sample1: control
+  Sample2: control
+  Sample3: control
+  Sample4: control
+  Sample5: control
+  Sample6: control
+  Sample7: control
+  Sample8: control
+  Sample9: control
+  Sample10: control
+  Sample11: treatment
+  Sample12: treatment
+  Sample13: treatment
+  Sample14: treatment
+  Sample15: treatment
+  Sample16: treatment
+  Sample17: treatment
+  Sample18: treatment
+  Sample19: treatment
+  Sample20: treatment
+
+reference:
+  genome: main/reference/genome.fa
+  gtf: main/reference/genes.gtf
