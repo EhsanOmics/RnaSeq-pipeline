@@ -83,3 +83,6 @@ This pipeline is part of the EhsanOmics initiative, focused on reproducible bioi
 ⚠️ Disclaimer
 
 This pipeline uses placeholder data and simulated steps for demonstration purposes. Replace with real FASTQ files and reference genomes for production use.
+
+
+https://www.linkedin.com/posts/ehsanjafarinia_rnaseq-transcriptomics-geneexpression-activity-7377272838828818432-If_Y?utm_source=share&utm_medium=member_android&rcm=ACoAAEfgyyIBmT1V4KckCypdwpDXkpu2W5mb39o
